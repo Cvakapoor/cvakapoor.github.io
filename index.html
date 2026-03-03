@@ -49,8 +49,14 @@
         
         <p style="text-align:center">
           <a href="mailto:cvakapoor@gmail.com">Email</a> &nbsp;/&nbsp;
-          <a href="resume/Siva_CV_2.2.pdf">Resume</a> &nbsp;/&nbsp;
-          <a href="https://www.linkedin.com/in/cvakapoor">LinkedIn</a>
+          <a id="resumeLink"
+             data-en="resume/Siva_CV_2.2_Eng.pdf"
+             data-no="resume/Siva_CV_2.2_NO.pdf"
+             href="resume/Siva_CV_2.2_Eng.pdf"  <!-- default is English -->
+             target="_blank">
+            CV
+          </a> &nbsp;/&nbsp;
+          <a href="https://www.linkedin.com/in/cvakapoor" target="_blank">LinkedIn</a>
         </p>
       </td>
 
@@ -413,10 +419,17 @@ const toggle = document.getElementById("langToggle");
 function setLanguage(isNorwegian) {
   const elements = document.querySelectorAll("[data-en]");
   elements.forEach(el => {
-    el.innerHTML = isNorwegian 
-      ? el.getAttribute("data-no") 
-      : el.getAttribute("data-en");
+    // Update inner text if it contains text
+    if (el.tagName.toLowerCase() !== "a" || el.innerText !== "Resume") {
+      el.innerHTML = isNorwegian ? el.getAttribute("data-no") : el.getAttribute("data-en");
+    }
+    
+    // Special handling for Resume link href
+    if (el.id === "resumeLink") {
+      el.href = isNorwegian ? el.getAttribute("data-no") : el.getAttribute("data-en");
+    }
   });
+  
   localStorage.setItem("language", isNorwegian ? "no" : "en");
 }
 
