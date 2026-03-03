@@ -50,11 +50,11 @@
         <p style="text-align:center">
           <a href="mailto:cvakapoor@gmail.com">Email</a> &nbsp;/&nbsp;
           <a id="resumeLink"
-             data-en="resume/Siva_CV_2.2_Eng.pdf"
-             data-no="resume/Siva_CV_2.2_NO.pdf"
              href="resume/Siva_CV_2.2_Eng.pdf"
-             data-text-en="Resume"
-             data-text-no="CV"
+             data-en-href="resume/Siva_CV_2.2_Eng.pdf"
+             data-no-href="resume/Siva_CV_2.2_NO.pdf"
+             data-en-text="Resume"
+             data-no-text="CV"
              target="_blank">
             Resume
           </a> &nbsp;/&nbsp;
@@ -419,27 +419,25 @@
 const toggle = document.getElementById("langToggle");
 
 function setLanguage(isNorwegian) {
-  const elements = document.querySelectorAll("[data-en]");
+  const elements = document.querySelectorAll("[data-en-href], [data-en]");
+  
   elements.forEach(el => {
-    // Update inner text if it contains text
-    if (el.tagName.toLowerCase() !== "a" || el.innerText !== "Resume") {
+    // If it's the Resume link
+    if (el.id === "resumeLink") {
+      el.href = isNorwegian ? el.getAttribute("data-no-href") : el.getAttribute("data-en-href");
+      el.innerText = isNorwegian ? el.getAttribute("data-no-text") : el.getAttribute("data-en-text");
+    } else {
+      // For normal text elements
       el.innerHTML = isNorwegian ? el.getAttribute("data-no") : el.getAttribute("data-en");
     }
-    
-    // Special handling for Resume link href
-    if (el.id === "resumeLink") {
-      el.href = isNorwegian ? el.getAttribute("data-no") : el.getAttribute("data-en");
-    }
   });
-  
+
   localStorage.setItem("language", isNorwegian ? "no" : "en");
 }
 
-toggle.addEventListener("change", () => {
-  setLanguage(toggle.checked);
-});
+toggle.addEventListener("change", () => setLanguage(toggle.checked));
 
-// Load saved language
+// On page load, set saved language
 window.onload = () => {
   const savedLang = localStorage.getItem("language");
   if (savedLang === "no") {
