@@ -10,6 +10,16 @@
 </head>
 
 <body>
+  <!-- LANGUAGE TOGGLE -->
+  <div class="lang-container">
+    <strong>EN</strong>
+    <label class="switch">
+      <input type="checkbox" id="langToggle">
+      <span class="slider"></span>
+    </label>
+    <strong>NO</strong>
+  </div>
+  <!-- HEADER SECTION -->
   <table style="width:100%;max-width:1000px;border:0;border-spacing:0;margin:auto;">
     <tr>
       <td style="width:63%;padding:2.5%;vertical-align:top">
@@ -17,7 +27,8 @@
           <name>Siva Sankar Udaya Kumar</name>
         </p>
 
-        <p>
+        <p data-en="I am an AI and ML engineer specializing in building production grade AI systems, data pipelines and decision support solutions. My expertise spans Generative AI, predictive analytics, financial modeling and scalable machine learning systems deployed in regulated and high availability environments."
+           data-no="Jeg er en AI og ML ingeniør som spesialiserer meg på produksjonsklare AI systemer, datapipelines og beslutningsstøttesystemer. Min ekspertise inkluderer generativ AI, prediktiv analyse, finansiell modellering og skalerbare maskinlæringssystemer brukt i regulerte miljøer.">
         I am an <b>AI and ML engineer</b> specializing in building <b>production grade AI systems</b>, <b>data pipelines</b> and <b>decision support solutions</b>. My expertise spans <b>Generative AI</b>, predictive analytics, financial modeling and scalable machine learning systems deployed in regulated and high availability environments.
         </p>
         
@@ -54,7 +65,7 @@
     <!-- Projects Heading -->
     <tr>
       <td style="padding:20px;width:100%;vertical-align:middle">
-        <heading>Projects</heading>
+        <heading data-en="Projects" data-no="Prosjekter">Projects</heading>
       </td>
     </tr>
 
@@ -344,5 +355,33 @@
 
   </tbody>
 </table>
+
+<!-- LANGUAGE SCRIPT -->
+<script>
+const toggle = document.getElementById("langToggle");
+
+function setLanguage(isNorwegian) {
+  const elements = document.querySelectorAll("[data-en]");
+  elements.forEach(el => {
+    el.innerHTML = isNorwegian 
+      ? el.getAttribute("data-no") 
+      : el.getAttribute("data-en");
+  });
+  localStorage.setItem("language", isNorwegian ? "no" : "en");
+}
+
+toggle.addEventListener("change", () => {
+  setLanguage(toggle.checked);
+});
+
+// Load saved language
+window.onload = () => {
+  const savedLang = localStorage.getItem("language");
+  if (savedLang === "no") {
+    toggle.checked = true;
+    setLanguage(true);
+  }
+};
+</script>
 
 </html>
