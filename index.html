@@ -58,6 +58,13 @@
              target="_blank">
             Resume
           </a> &nbsp;/&nbsp;
+          <a id="videoCV" 
+             href="video/Siva_Video_CV.mp4"
+             data-en-text="Video CV"
+             data-no-text="Video CV"
+             target="_blank">
+            Video CV
+          </a> &nbsp;/&nbsp;
           <a href="https://www.linkedin.com/in/cvakapoor" target="_blank">LinkedIn</a>
         </p>
       </td>
@@ -67,6 +74,18 @@
       </td>
     </tr>
   </table>
+
+  <tr>
+    <td style="padding:20px;text-align:center;">
+      <heading data-en="Video CV" data-no="Video CV">Video CV</heading><br><br>
+
+      <video width="60%" controls style="border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+        <source src="video/Siva_Video_CV.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+  
 </body>
 
 <!-- PROJECTS & PERSONAL SECTION (Wrapped) -->
@@ -426,7 +445,12 @@ function setLanguage(isNorwegian) {
     if (el.id === "resumeLink") {
       el.href = isNorwegian ? el.getAttribute("data-no-href") : el.getAttribute("data-en-href");
       el.innerText = isNorwegian ? el.getAttribute("data-no-text") : el.getAttribute("data-en-text");
-    } else {
+    }
+      // Video CV text toggle
+    else if (el.id === "videoCV") {
+      el.innerText = isNorwegian ? el.getAttribute("data-no-text") : el.getAttribute("data-en-text");
+    }
+    else {
       // For normal text elements
       el.innerHTML = isNorwegian ? el.getAttribute("data-no") : el.getAttribute("data-en");
     }
