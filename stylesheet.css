@@ -1,77 +1,75 @@
-/* latin-ext */
+/* =========================================================
+   FONT
+========================================================= */
+
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local('Lato Italic'),
+       local('Lato-Italic'),
+       url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2)
+       format('woff2');
 }
 
-a {
-  color: #1772d0;
-  text-decoration: none;
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'),
+       local('Lato-BoldItalic'),
+       url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2)
+       format('woff2');
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'),
+       local('Lato-Regular'),
+       url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'),
+       local('Lato-Bold'),
+       url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2)
+       format('woff2');
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+  --text: #30343b;
+  --heading: #1f2933;
+  --muted: #737b86;
+  --accent: #2563a8;
+  --accent-hover: #174f8a;
+  --border: #e6e9ed;
+  --soft-bg: #f8fafc;
+  --tag-bg: #f4f6f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 50px 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 body,
@@ -79,73 +77,196 @@ td,
 th,
 tr,
 p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
-}
-
+a,
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+}
+
+p {
+  font-size: 15px;
+  color: var(--text);
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   NAME / HEADINGS
+========================================================= */
+
+name {
+  display: inline-block;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--heading);
 }
 
 heading {
+  display: inline-block;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--heading);
+  letter-spacing: -0.2px;
+}
+
+heading1 {
+  display: inline-block;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--muted);
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--heading);
+  transition: color 0.2s ease;
+}
+
+a:hover papertitle {
+  color: var(--accent);
+}
+
+
+/* =========================================================
+   MAIN CONTENT WIDTH
+========================================================= */
+
+body > table {
+  width: 100% !important;
+  max-width: 1000px !important;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+body > table:first-of-type {
+  margin-top: 5px !important;
+  margin-bottom: 20px !important;
+}
+
+body > table:first-of-type td {
+  vertical-align: middle !important;
+}
+
+
+/* Profile image */
+
+body > table:first-of-type img {
+  width: 82% !important;
+  max-width: 285px !important;
+  border-radius: 18px !important;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10) !important;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+body > table:first-of-type img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.13) !important;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+body > table:first-of-type td:first-child p {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+body > table:first-of-type td:first-child p:last-child {
+  margin-top: 24px;
+}
+
+
+/* Subtitle beneath name */
+
+body > table:first-of-type td:first-child p:nth-child(2) span {
+  font-size: 15px !important;
+  color: var(--muted) !important;
+  letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   CONTACT / PROFILE LINKS
+========================================================= */
+
+body > table:first-of-type td:first-child p:last-child {
+  padding-top: 10px;
+}
+
+body > table:first-of-type td:first-child p:last-child a {
+  display: inline-block;
+  margin: 2px 3px;
   font-size: 14px;
-  font-weight: 700
+  font-weight: 700;
 }
 
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+body > table:first-of-type td:first-child p:last-child a:hover {
+  transform: translateY(-1px);
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-/* ===============================
-   Language Toggle Styling
-================================= */
+/* =========================================================
+   LANGUAGE TOGGLE
+========================================================= */
 
 .lang-container {
+  width: 94%;
   max-width: 1000px;
-  margin: 20px auto 0 auto;
+  margin: 18px auto 5px auto;
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
+.lang-container strong {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.5px;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
+  width: 46px;
   height: 24px;
-  margin: 0 8px;
+  margin: 0 5px;
 }
 
 .switch input {
@@ -155,13 +276,13 @@ span.highlight {
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: #ccc;
-  border-radius: 34px;
+  background-color: #d8dde3;
+  border-radius: 30px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  transition: .4s;
+  transition: background-color 0.25s ease;
 }
 
 .slider:before {
@@ -171,15 +292,276 @@ span.highlight {
   width: 18px;
   left: 3px;
   bottom: 3px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50%;
-  transition: .4s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+  transition: transform 0.25s ease;
 }
 
 input:checked + .slider {
-  background-color: #1772d0;
+  background-color: var(--accent);
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(22px);
+}
+
+
+/* =========================================================
+   PROJECT SECTION
+========================================================= */
+
+/* Projects heading */
+
+body > table:nth-of-type(2) > tbody > tr:first-child td {
+  padding-top: 25px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid var(--border);
+}
+
+
+/* Each project */
+
+body > table:nth-of-type(2) > tbody > tr:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* Project images */
+
+body > table:nth-of-type(2) img {
+  border-radius: 14px !important;
+  border: 1px solid var(--border) !important;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+body > table:nth-of-type(2) img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Project title */
+
+body > table:nth-of-type(2) papertitle {
+  font-size: 18px;
+}
+
+
+/* Project descriptions */
+
+body > table:nth-of-type(2) i {
+  font-style: normal;
+  color: #555d66;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   TECHNOLOGY TAGS
+========================================================= */
+
+body > table:nth-of-type(2) span {
+  display: inline-block !important;
+  background: var(--tag-bg) !important;
+  border: 1px solid #e2e6ea;
+  padding: 4px 10px !important;
+  margin: 2px 3px 3px 0 !important;
+  border-radius: 999px !important;
+  color: #59616b;
+  font-size: 11px !important;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   GITHUB LINKS
+========================================================= */
+
+.paper {
+  margin: 5px 0 10px 0;
+}
+
+.paper a {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.paper a::after {
+  content: " ↗";
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   HOBBIES
+========================================================= */
+
+body > table:nth-of-type(2) > tbody > tr:nth-last-child(3) {
+  padding-top: 15px;
+}
+
+body > table:nth-of-type(2) > tbody > tr:nth-last-child(3) heading {
+  margin-bottom: 4px;
+}
+
+
+/* Hobby images */
+
+body > table:nth-of-type(2) img[src*="Hike"],
+body > table:nth-of-type(2) img[src*="desert_bike"],
+body > table:nth-of-type(2) img[src*="pyramid_jump"] {
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+body > table:nth-of-type(2) img[src*="Hike"]:hover,
+body > table:nth-of-type(2) img[src*="desert_bike"]:hover,
+body > table:nth-of-type(2) img[src*="pyramid_jump"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.11);
+}
+
+
+/* =========================================================
+   HIGHLIGHT
+========================================================= */
+
+span.highlight {
+  background-color: #fff7cc;
+  border-radius: 4px;
+  padding: 1px 3px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  body {
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+
+  .lang-container {
+    width: 90%;
+    margin-top: 12px;
+  }
+
+  name {
+    font-size: 28px;
+  }
+
+  heading {
+    font-size: 23px;
+  }
+
+  papertitle {
+    font-size: 17px;
+  }
+
+  body > table {
+    width: 94% !important;
+  }
+
+  /* Header columns become stacked */
+
+  body > table:first-of-type td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 15px 3% !important;
+  }
+
+  body > table:first-of-type td:first-child {
+    text-align: left;
+  }
+
+  body > table:first-of-type td:first-child
+  > p:first-child,
+  body > table:first-of-type td:first-child
+  > p:nth-child(2),
+  body > table:first-of-type td:first-child
+  > p:last-child {
+    text-align: center !important;
+  }
+
+  body > table:first-of-type img {
+    width: 65% !important;
+    max-width: 240px !important;
+    margin: 10px auto 15px auto;
+  }
+
+  /* Projects */
+
+  body > table:nth-of-type(2) table {
+    width: 100% !important;
+  }
+
+  body > table:nth-of-type(2) table td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 10px 3% !important;
+  }
+
+  body > table:nth-of-type(2) table td:first-child {
+    text-align: center;
+  }
+
+  body > table:nth-of-type(2) table td:first-child img {
+    width: 92% !important;
+    margin: 5px auto 15px auto !important;
+  }
+
+  body > table:nth-of-type(2) table td:nth-child(2) {
+    padding-top: 0 !important;
+  }
+
+  /* Hobby images */
+
+  body > table:nth-of-type(2) table td img {
+    height: 220px !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 450px) {
+
+  name {
+    font-size: 25px;
+  }
+
+  heading {
+    font-size: 21px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  body > table:first-of-type img {
+    width: 75% !important;
+  }
+
+  body > table:nth-of-type(2) table td img {
+    height: 200px !important;
+  }
+
+  .lang-container {
+    margin-right: 5%;
+  }
 }
